@@ -1,5 +1,11 @@
 ## Promt:
-Using the following values, N = number of players D = value of the card I played minus value of the top card of the stack S = number of cards in the stack A number of possible cards that others could play how would I mathematically calculate the probability of placing the 6th card and taking the stack if all other players play randomly?
+Using the following values,
+
+    N = number of players  
+    D = value of the card I played minus value of the top card of the stack  
+    S = number of cards in the stack A number of possible cards that others could play
+
+how would I mathematically calculate the probability of placing the 6th card and taking the stack if all other players play randomly?
 
 ## Copilot's response:
 
