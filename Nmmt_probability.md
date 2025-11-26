@@ -29,9 +29,9 @@ Define
 
 Then the probability that at least (6 − S) opponents play into that interval (so your card becomes the 6th or later and you take the stack) is the tail of a binomial:
 
-\[
+$$
 P(\text{you take row}) \;=\; \sum_{m=6-S}^{M} \binom{M}{m}\, p^{m}\,(1-p)^{M-m}
-\]
+$$
 
 where the sum is taken only over integers m with 6−S ≤ m ≤ M. If 6−S ≤ 0 (i.e., S ≥ 6) interpret as P = 1 (already full), and if 6−S > M then P = 0 (not enough opponents to reach 6).
 
@@ -40,9 +40,9 @@ Example
 - S = 4 (row currently has 4 cards) so you need 6−S = 2 opponents to play into the interval.  
 - D = 10 and A = 90 → p = 10/90 = 1/9.  
 Then
-\[
+$$
 P = \sum_{m=2}^{4} \binom{4}{m} (1/9)^m(8/9)^{4-m}.
-\]
+$$
 
 Notes and refinements
 - If A should exclude values that are impossible (cards already played, your hand, or values ≤ row top or ≥ next-row top), compute p as (# of remaining possible opponent card values in the open interval) ÷ (total remaining possible opponent card values).  
