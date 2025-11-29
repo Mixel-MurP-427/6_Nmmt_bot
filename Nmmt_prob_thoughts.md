@@ -18,6 +18,22 @@ NOT [P(A) OR P(A) OR P(A)] for n terms == (1 - P(A))^n
 
 **Final formula:**
 
-$$ P = \prod_{i=0}^{4 - S} \left(\frac{D-i}{A-i}\right) \left(1 - \frac{D-S}{A-S}\right)^{N+S-5} $$
+$$ P = \prod_{i=0}^{4 - S} \left(\frac{D-i}{A-i}\right) \left(1 - \frac{D+S-5}{A+S-5}\right)^{N+S-6} $$
 
 TODO test this formula against hard data
+
+| N | 5 - S | state | P |
+| :--- | :--- | :--- | :--- |
+| 2 | 3 | | 
+| 3 | 3 |
+| 4 | 3 |
+| 3 | 4 |
+| 4 | 4 |
+| 5 | 4 |
+| 4 | 5 |
+| 5 | 5 |
+| 6 | 5 |
+
+$ \text{If } N + S < 6, \text{ then } P = 0 $
+
+TODO test what happens when the top term in a fraction zeros out. Does it cause glitches?
